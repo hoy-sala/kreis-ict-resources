@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICT Teaching Resources | KREIS</title>
-    <meta name="description" content="Complete ICT teaching resources for Classes 6-10. Lesson plans, assessments, lab manuals, and answer keys for Karnataka Residential Educational Institutions Society.">
+    <meta name="description" content="Complete ICT teaching resources for Classes 6-10. Lesson plans, assessments, lab manuals, and answer keys for KREIS schools.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 </head>
@@ -20,10 +20,9 @@
                 <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
             </button>
             <ul class="nav-links">
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#classes">By Class</a></li>
+                <li><a href="#downloads">Downloads</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#approach">Approach</a></li>
+                <li><a href="#pedagogy">Pedagogy</a></li>
             </ul>
         </div>
     </nav>
@@ -31,352 +30,301 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">
-                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0Z"/><path d="M6.5 3.5a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 .5-.5Z"/></svg>
-                KARNATAKA RESIDENTIAL SCHOOLS
-            </div>
+            <div class="hero-badge">KARNATAKA RESIDENTIAL SCHOOLS</div>
             <h1>Teaching ICT with <span>purpose &amp; passion</span></h1>
             <p class="hero-subtitle">
-                A complete teaching toolkit for Classes 6 through 10 &mdash; crafted for 817 KREIS residential schools across rural Karnataka, where every lesson counts and every child deserves quality resources.
+                A complete toolkit for Classes 6&ndash;10, built for 817 KREIS residential schools across rural Karnataka. Every lesson fits 40 minutes. Every activity works without a lab.
             </p>
             <div class="hero-actions">
-                <a href="downloads/" class="btn btn-primary">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Download All Resources
+                <a href="#downloads" class="btn btn-primary">Browse Downloads</a>
+                <a href="#about" class="btn btn-secondary">About This Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section section-alt" id="downloads">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-eyebrow">Downloads</span>
+                <h2 class="section-title">27 PDFs, everything you need</h2>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="filter-tabs no-print">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="teaching">Teaching Guides</button>
+                <button class="filter-tab" data-filter="planning">Year Plans</button>
+                <button class="filter-tab" data-filter="lessons">Lesson Plans</button>
+                <button class="filter-tab" data-filter="assessment">Assessments &amp; Keys</button>
+                <button class="filter-tab" data-filter="lab">Lab Manuals</button>
+            </div>
+
+            <div class="download-grid" id="downloadGrid">
+                <!-- Teaching Guides -->
+                <a href="downloads/teaching-guides-level1.pdf" class="download-item" data-cat="teaching">
+                    <div class="download-icon" style="background:#dbeafe;color:#2563eb;">&#x1f4d6;</div>
+                    <div class="download-info">
+                        <strong>Teaching Guide &mdash; Level 1</strong>
+                        <span>Class 6 &middot; Pedagogy, approaches, classroom strategies</span>
+                    </div>
                 </a>
-                <a href="#resources" class="btn btn-secondary">
-                    Explore Materials
+                <a href="downloads/teaching-guides-level2.pdf" class="download-item" data-cat="teaching">
+                    <div class="download-icon" style="background:#dbeafe;color:#2563eb;">&#x1f4d6;</div>
+                    <div class="download-info">
+                        <strong>Teaching Guide &mdash; Level 2</strong>
+                        <span>Class 7 &middot; Pedagogy, approaches, classroom strategies</span>
+                    </div>
+                </a>
+                <a href="downloads/teaching-guides-level3.pdf" class="download-item" data-cat="teaching">
+                    <div class="download-icon" style="background:#dbeafe;color:#2563eb;">&#x1f4d6;</div>
+                    <div class="download-info">
+                        <strong>Teaching Guide &mdash; Level 3</strong>
+                        <span>Classes 8&ndash;10 &middot; Pedagogy, approaches, classroom strategies</span>
+                    </div>
+                </a>
+
+                <!-- Year Plans -->
+                <a href="downloads/class6.pdf" class="download-item" data-cat="planning">
+                    <div class="download-icon" style="background:#d1fae5;color:#059669;">&#x1f4c5;</div>
+                    <div class="download-info">
+                        <strong>Year Plan &mdash; Class 6</strong>
+                        <span>Annual curriculum mapping &middot; 6 chapters, 72 lessons</span>
+                    </div>
+                </a>
+                <a href="downloads/class7.pdf" class="download-item" data-cat="planning">
+                    <div class="download-icon" style="background:#d1fae5;color:#059669;">&#x1f4c5;</div>
+                    <div class="download-info">
+                        <strong>Year Plan &mdash; Class 7</strong>
+                        <span>Annual curriculum mapping &middot; 6 chapters, 71 lessons</span>
+                    </div>
+                </a>
+                <a href="downloads/class8.pdf" class="download-item" data-cat="planning">
+                    <div class="download-icon" style="background:#d1fae5;color:#059669;">&#x1f4c5;</div>
+                    <div class="download-info">
+                        <strong>Year Plan &mdash; Class 8</strong>
+                        <span>Annual curriculum mapping &middot; 6 chapters, 72 lessons</span>
+                    </div>
+                </a>
+                <a href="downloads/class9.pdf" class="download-item" data-cat="planning">
+                    <div class="download-icon" style="background:#d1fae5;color:#059669;">&#x1f4c5;</div>
+                    <div class="download-info">
+                        <strong>Year Plan &mdash; Class 9</strong>
+                        <span>Annual curriculum mapping &middot; 6 chapters, 72 lessons</span>
+                    </div>
+                </a>
+                <a href="downloads/class10.pdf" class="download-item" data-cat="planning">
+                    <div class="download-icon" style="background:#d1fae5;color:#059669;">&#x1f4c5;</div>
+                    <div class="download-info">
+                        <strong>Year Plan &mdash; Class 10</strong>
+                        <span>Annual curriculum mapping &middot; 6 chapters, 72 lessons</span>
+                    </div>
+                </a>
+
+                <!-- Lesson Plans -->
+                <a href="downloads/level1-lesson-plans.pdf" class="download-item" data-cat="lessons">
+                    <div class="download-icon" style="background:#ede9fe;color:#7c3aed;">&#x1f4cb;</div>
+                    <div class="download-info">
+                        <strong>Lesson Plans &mdash; Level 1</strong>
+                        <span>Class 6 &middot; 72 plans &middot; 5E format, 40-min periods</span>
+                    </div>
+                </a>
+                <a href="downloads/level2-lesson-plans.pdf" class="download-item" data-cat="lessons">
+                    <div class="download-icon" style="background:#ede9fe;color:#7c3aed;">&#x1f4cb;</div>
+                    <div class="download-info">
+                        <strong>Lesson Plans &mdash; Level 2</strong>
+                        <span>Class 7 &middot; 71 plans &middot; 5E format, 40-min periods</span>
+                    </div>
+                </a>
+                <a href="downloads/level3-lesson-plans.pdf" class="download-item" data-cat="lessons">
+                    <div class="download-icon" style="background:#ede9fe;color:#7c3aed;">&#x1f4cb;</div>
+                    <div class="download-info">
+                        <strong>Lesson Plans &mdash; Level 3</strong>
+                        <span>Classes 8&ndash;10 &middot; 72 plans &middot; 5E format, 40-min periods</span>
+                    </div>
+                </a>
+
+                <!-- Assessments -->
+                <a href="downloads/class6-assessments.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#ffe4e6;color:#e11d48;">&#x1f4dd;</div>
+                    <div class="download-info">
+                        <strong>Assessments &mdash; Class 6</strong>
+                        <span>4 FA + 4 UT + 2 SA + 2 Lab = 12 papers &middot; 280 marks</span>
+                    </div>
+                </a>
+                <a href="downloads/class7-assessments.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#ffe4e6;color:#e11d48;">&#x1f4dd;</div>
+                    <div class="download-info">
+                        <strong>Assessments &mdash; Class 7</strong>
+                        <span>4 FA + 4 UT + 2 SA + 2 Lab = 12 papers &middot; 280 marks</span>
+                    </div>
+                </a>
+                <a href="downloads/class8-assessments.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#ffe4e6;color:#e11d48;">&#x1f4dd;</div>
+                    <div class="download-info">
+                        <strong>Assessments &mdash; Class 8</strong>
+                        <span>4 FA + 4 UT + 2 SA + 2 Lab = 12 papers &middot; 280 marks</span>
+                    </div>
+                </a>
+                <a href="downloads/class9-assessments.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#ffe4e6;color:#e11d48;">&#x1f4dd;</div>
+                    <div class="download-info">
+                        <strong>Assessments &mdash; Class 9</strong>
+                        <span>4 FA + 4 UT + 2 SA + 2 Lab = 12 papers &middot; 280 marks</span>
+                    </div>
+                </a>
+                <a href="downloads/class10-assessments.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#ffe4e6;color:#e11d48;">&#x1f4dd;</div>
+                    <div class="download-info">
+                        <strong>Assessments &mdash; Class 10</strong>
+                        <span>4 FA + 4 UT + 2 SA + 2 Lab = 12 papers &middot; 280 marks</span>
+                    </div>
+                </a>
+
+                <!-- Answer Keys -->
+                <a href="downloads/class6-answer-keys.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#fef3c7;color:#d97706;">&#x2705;</div>
+                    <div class="download-info">
+                        <strong>Answer Keys &mdash; Class 6</strong>
+                        <span>Marking guidelines for all 12 assessments</span>
+                    </div>
+                </a>
+                <a href="downloads/class7-answer-keys.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#fef3c7;color:#d97706;">&#x2705;</div>
+                    <div class="download-info">
+                        <strong>Answer Keys &mdash; Class 7</strong>
+                        <span>Marking guidelines for all 12 assessments</span>
+                    </div>
+                </a>
+                <a href="downloads/class8-answer-keys.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#fef3c7;color:#d97706;">&#x2705;</div>
+                    <div class="download-info">
+                        <strong>Answer Keys &mdash; Class 8</strong>
+                        <span>Marking guidelines for all 12 assessments</span>
+                    </div>
+                </a>
+                <a href="downloads/class9-answer-keys.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#fef3c7;color:#d97706;">&#x2705;</div>
+                    <div class="download-info">
+                        <strong>Answer Keys &mdash; Class 9</strong>
+                        <span>Marking guidelines for all 12 assessments</span>
+                    </div>
+                </a>
+                <a href="downloads/class10-answer-keys.pdf" class="download-item" data-cat="assessment">
+                    <div class="download-icon" style="background:#fef3c7;color:#d97706;">&#x2705;</div>
+                    <div class="download-info">
+                        <strong>Answer Keys &mdash; Class 10</strong>
+                        <span>Marking guidelines for all 12 assessments</span>
+                    </div>
+                </a>
+
+                <!-- Lab Manuals -->
+                <a href="downloads/lab-manual-level1.pdf" class="download-item" data-cat="lab">
+                    <div class="download-icon" style="background:#cffafe;color:#0891b2;">&#x1f52c;</div>
+                    <div class="download-info">
+                        <strong>Lab Manual &mdash; Level 1</strong>
+                        <span>Class 6 &middot; Hands-on exercises, dormitory tasks</span>
+                    </div>
+                </a>
+                <a href="downloads/lab-manual-level2.pdf" class="download-item" data-cat="lab">
+                    <div class="download-icon" style="background:#cffafe;color:#0891b2;">&#x1f52c;</div>
+                    <div class="download-info">
+                        <strong>Lab Manual &mdash; Level 2</strong>
+                        <span>Class 7 &middot; Hands-on exercises, dormitory tasks</span>
+                    </div>
+                </a>
+                <a href="downloads/lab-manual-level3.pdf" class="download-item" data-cat="lab">
+                    <div class="download-icon" style="background:#cffafe;color:#0891b2;">&#x1f52c;</div>
+                    <div class="download-info">
+                        <strong>Lab Manual &mdash; Level 3</strong>
+                        <span>Classes 8&ndash;10 &middot; Hands-on exercises, dormitory tasks</span>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
-    <div class="stats-strip no-print">
-        <div class="stat">
-            <div class="stat-number">27</div>
-            <div class="stat-label">PDF Downloads</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">216</div>
-            <div class="stat-label">Lesson Plans</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">60</div>
-            <div class="stat-label">Assessments</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">60</div>
-            <div class="stat-label">Answer Keys</div>
-        </div>
-        <div class="stat">
-            <div class="stat-number">5</div>
-            <div class="stat-label">Grade Levels</div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section class="section section-alt" id="about">
+    <!-- About -->
+    <section class="section" id="about">
         <div class="section-inner">
             <div class="about-grid">
                 <div class="about-text">
-                    <span class="section-eyebrow">About This Project</span>
+                    <span class="section-eyebrow">About</span>
                     <h2>Built for teachers who build Karnataka</h2>
                     <p>
-                        These resources were designed for the unique realities of KREIS schools &mdash; 817 residential institutions serving rural Karnataka, where 40-minute periods, mixed-ability classrooms, and limited lab access are the norm, not the exception.
+                        These resources were designed for the realities of KREIS schools &mdash; 817 residential institutions where 40-minute periods, mixed-ability classrooms, and limited lab access are the norm.
                     </p>
                     <p>
-                        Every lesson plan fits a single 40-minute period. Every activity works with zero lab access. Every assessment follows the KREIS framework of 4 FAs, 4 Unit Tests, 2 SAs, and 2 Lab Exams &mdash; totalling 280 marks per student per year.
+                        Every lesson plan fits one period. Every activity works with zero lab access. Every assessment follows the KREIS framework: 4 FAs, 4 Unit Tests, 2 SAs, 2 Lab Exams &mdash; 280 marks per student per year.
                     </p>
                     <div class="about-highlights">
                         <div class="about-highlight">
                             <div class="about-highlight-icon">&#x1f3d7;</div>
                             <h4>817 Schools</h4>
-                            <p>Across Karnataka's rural districts</p>
+                            <p>Across rural Karnataka</p>
                         </div>
                         <div class="about-highlight">
-                            <div class="about-highlight-icon">&#x1f40d;</div>
-                            <h4>40-Minute Periods</h4>
+                            <div class="about-highlight-icon">&#x23f1;</div>
+                            <h4>40-Min Periods</h4>
                             <p>Every lesson designed to fit</p>
                         </div>
                         <div class="about-highlight">
                             <div class="about-highlight-icon">&#x1f331;</div>
-                            <h4>Rural First</h4>
-                            <p>Zero-lab activities included</p>
+                            <h4>Zero Lab OK</h4>
+                            <p>Paper-and-pencil tasks included</p>
                         </div>
                         <div class="about-highlight">
                             <div class="about-highlight-icon">&#x1f4ca;</div>
                             <h4>280 Marks</h4>
-                            <p>Complete annual assessment suite</p>
+                            <p>Complete annual assessment</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="about-image-frame">
-                        &#x1f393;
-                    </div>
+                    <div class="about-image-frame">&#x1f393;</div>
                     <div class="about-image-decoration"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Resources Section -->
-    <section class="section" id="resources">
+    <!-- Pedagogy -->
+    <section class="section section-alt" id="pedagogy">
         <div class="section-inner">
             <div class="section-header">
-                <span class="section-eyebrow">Teaching Materials</span>
-                <h2 class="section-title">Everything you need, nothing you don't</h2>
-                <p class="section-desc">From year plans to lab manuals, every resource is print-ready A4 and built for the KREIS curriculum.</p>
-            </div>
-
-            <div class="resource-grid">
-                <!-- Teaching Guides -->
-                <div class="resource-card" style="--card-accent: #2563eb; --card-accent-soft: #dbeafe;">
-                    <div class="resource-card-accent"></div>
-                    <div class="resource-card-body">
-                        <div class="resource-card-icon">&#x1f4d6;</div>
-                        <h3>Teaching Guides</h3>
-                        <p>Comprehensive pedagogical guides for each level, covering Singapore CPA, UK NCCE Unplugged, Lesson Study, and Phenomenon-Based Learning approaches.</p>
-                        <div class="resource-card-links">
-                            <a href="downloads/teaching-guides-level1.pdf" class="resource-card-link">Level 1 (Class 6)</a>
-                            <a href="downloads/teaching-guides-level2.pdf" class="resource-card-link">Level 2 (Class 7)</a>
-                            <a href="downloads/teaching-guides-level3.pdf" class="resource-card-link">Level 3 (Class 8-10)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Year Plans -->
-                <div class="resource-card" style="--card-accent: #059669; --card-accent-soft: #d1fae5;">
-                    <div class="resource-card-accent"></div>
-                    <div class="resource-card-body">
-                        <div class="resource-card-icon">&#x1f4c5;</div>
-                        <h3>Year Plans</h3>
-                        <p>Annual curriculum mapping with 100% syllabus coverage by January, followed by revision, practical re-runs, and exam preparation in February-March.</p>
-                        <div class="resource-card-links">
-                            <a href="downloads/class6.pdf" class="resource-card-link">Class 6</a>
-                            <a href="downloads/class7.pdf" class="resource-card-link">Class 7</a>
-                            <a href="downloads/class8.pdf" class="resource-card-link">Class 8</a>
-                            <a href="downloads/class9.pdf" class="resource-card-link">Class 9</a>
-                            <a href="downloads/class10.pdf" class="resource-card-link">Class 10</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lesson Plans -->
-                <div class="resource-card" style="--card-accent: #7c3aed; --card-accent-soft: #ede9fe;">
-                    <div class="resource-card-accent"></div>
-                    <div class="resource-card-body">
-                        <div class="resource-card-icon">&#x1f4cb;</div>
-                        <h3>5E Lesson Plans</h3>
-                        <p>216 detailed lesson plans following the Engage, Explore, Explain, Elaborate, Evaluate framework. Each fits a single 40-minute period perfectly.</p>
-                        <div class="resource-card-links">
-                            <a href="downloads/level1-lesson-plans.pdf" class="resource-card-link">Level 1 (72 plans)</a>
-                            <a href="downloads/level2-lesson-plans.pdf" class="resource-card-link">Level 2 (71 plans)</a>
-                            <a href="downloads/level3-lesson-plans.pdf" class="resource-card-link">Level 3 (72 plans)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Assessments -->
-                <div class="resource-card" style="--card-accent: #e11d48; --card-accent-soft: #ffe4e6;">
-                    <div class="resource-card-accent"></div>
-                    <div class="resource-card-body">
-                        <div class="resource-card-icon">&#x1f4dd;</div>
-                        <h3>Assessments</h3>
-                        <p>60 complete assessments: 4 Formative (30 marks), 4 Unit Tests (10 marks), 2 Summative (40 marks), and 2 Practical Lab Exams (20 marks) per class.</p>
-                        <div class="resource-card-links">
-                            <a href="downloads/class6-assessments.pdf" class="resource-card-link">Class 6 (12)</a>
-                            <a href="downloads/class7-assessments.pdf" class="resource-card-link">Class 7 (12)</a>
-                            <a href="downloads/class8-assessments.pdf" class="resource-card-link">Class 8 (12)</a>
-                            <a href="downloads/class9-assessments.pdf" class="resource-card-link">Class 9 (12)</a>
-                            <a href="downloads/class10-assessments.pdf" class="resource-card-link">Class 10 (12)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Answer Keys -->
-                <div class="resource-card" style="--card-accent: #d97706; --card-accent-soft: #fef3c7;">
-                    <div class="resource-card-accent"></div>
-                    <div class="resource-card-body">
-                        <div class="resource-card-icon">&#x2705;</div>
-                        <h3>Answer Keys</h3>
-                        <p>Complete marking guidelines for every assessment, with model answers, marking rubrics, and partial credit guidelines for teachers.</p>
-                        <div class="resource-card-links">
-                            <a href="downloads/class6-answer-keys.pdf" class="resource-card-link">Class 6 Keys</a>
-                            <a href="downloads/class7-answer-keys.pdf" class="resource-card-link">Class 7 Keys</a>
-                            <a href="downloads/class8-answer-keys.pdf" class="resource-card-link">Class 8 Keys</a>
-                            <a href="downloads/class9-answer-keys.pdf" class="resource-card-link">Class 9 Keys</a>
-                            <a href="downloads/class10-answer-keys.pdf" class="resource-card-link">Class 10 Keys</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lab Manuals -->
-                <div class="resource-card" style="--card-accent: #0891b2; --card-accent-soft: #cffafe;">
-                    <div class="resource-card-accent"></div>
-                    <div class="resource-card-body">
-                        <div class="resource-card-icon">&#x1f52c;</div>
-                        <h3>Lab Manuals</h3>
-                        <p>Student workbooks with hands-on exercises designed for schools with limited or no computer lab access. Paper-and-pencil dormitory tasks included.</p>
-                        <div class="resource-card-links">
-                            <a href="downloads/lab-manual-level1.pdf" class="resource-card-link">Level 1</a>
-                            <a href="downloads/lab-manual-level2.pdf" class="resource-card-link">Level 2</a>
-                            <a href="downloads/lab-manual-level3.pdf" class="resource-card-link">Level 3</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Classes Section -->
-    <section class="section section-alt" id="classes">
-        <div class="section-inner">
-            <div class="section-header">
-                <span class="section-eyebrow">By Class</span>
-                <h2 class="section-title">Quick access for every grade</h2>
-                <p class="section-desc">Jump straight to the resources you need for your class.</p>
-            </div>
-
-            <div class="class-grid">
-                <!-- Class 6 -->
-                <div class="class-card">
-                    <div class="class-card-header">
-                        <div class="class-card-number c6">6</div>
-                        <div class="class-card-title">
-                            <h3>Class 6 &mdash; ICT Level 1</h3>
-                            <span>Introduction to Computers &amp; Internet</span>
-                        </div>
-                    </div>
-                    <ul class="class-card-list">
-                        <li><a href="downloads/teaching-guides-level1.pdf">Teaching Guide</a></li>
-                        <li><a href="downloads/class6.pdf">Year Plan</a></li>
-                        <li><a href="downloads/level1-lesson-plans.pdf">Lesson Plans <span class="badge">72</span></a></li>
-                        <li><a href="downloads/class6-assessments.pdf">Assessments <span class="badge">12</span></a></li>
-                        <li><a href="downloads/class6-answer-keys.pdf">Answer Keys <span class="badge">12</span></a></li>
-                        <li><a href="downloads/lab-manual-level1.pdf">Lab Manual</a></li>
-                    </ul>
-                </div>
-
-                <!-- Class 7 -->
-                <div class="class-card">
-                    <div class="class-card-header">
-                        <div class="class-card-number c7">7</div>
-                        <div class="class-card-title">
-                            <h3>Class 7 &mdash; ICT Level 2</h3>
-                            <span>Spreadsheets, Multimedia &amp; Scratch</span>
-                        </div>
-                    </div>
-                    <ul class="class-card-list">
-                        <li><a href="downloads/teaching-guides-level2.pdf">Teaching Guide</a></li>
-                        <li><a href="downloads/class7.pdf">Year Plan</a></li>
-                        <li><a href="downloads/level2-lesson-plans.pdf">Lesson Plans <span class="badge">71</span></a></li>
-                        <li><a href="downloads/class7-assessments.pdf">Assessments <span class="badge">12</span></a></li>
-                        <li><a href="downloads/class7-answer-keys.pdf">Answer Keys <span class="badge">12</span></a></li>
-                        <li><a href="downloads/lab-manual-level2.pdf">Lab Manual</a></li>
-                    </ul>
-                </div>
-
-                <!-- Class 8 -->
-                <div class="class-card">
-                    <div class="class-card-header">
-                        <div class="class-card-number c8">8</div>
-                        <div class="class-card-title">
-                            <h3>Class 8 &mdash; ICT Level 3</h3>
-                            <span>Databases, SQL &amp; Web Technologies</span>
-                        </div>
-                    </div>
-                    <ul class="class-card-list">
-                        <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
-                        <li><a href="downloads/class8.pdf">Year Plan</a></li>
-                        <li><a href="downloads/level3-lesson-plans.pdf">Lesson Plans <span class="badge">72</span></a></li>
-                        <li><a href="downloads/class8-assessments.pdf">Assessments <span class="badge">12</span></a></li>
-                        <li><a href="downloads/class8-answer-keys.pdf">Answer Keys <span class="badge">12</span></a></li>
-                        <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
-                    </ul>
-                </div>
-
-                <!-- Class 9 -->
-                <div class="class-card">
-                    <div class="class-card-header">
-                        <div class="class-card-number c9">9</div>
-                        <div class="class-card-title">
-                            <h3>Class 9 &mdash; ICT Level 3</h3>
-                            <span>Python Programming &amp; Data Analytics</span>
-                        </div>
-                    </div>
-                    <ul class="class-card-list">
-                        <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
-                        <li><a href="downloads/class9.pdf">Year Plan</a></li>
-                        <li><a href="downloads/level3-lesson-plans.pdf">Lesson Plans <span class="badge">72</span></a></li>
-                        <li><a href="downloads/class9-assessments.pdf">Assessments <span class="badge">12</span></a></li>
-                        <li><a href="downloads/class9-answer-keys.pdf">Answer Keys <span class="badge">12</span></a></li>
-                        <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
-                    </ul>
-                </div>
-
-                <!-- Class 10 -->
-                <div class="class-card">
-                    <div class="class-card-header">
-                        <div class="class-card-number c10">10</div>
-                        <div class="class-card-title">
-                            <h3>Class 10 &mdash; ICT Level 3</h3>
-                            <span>Advanced Python, Networking &amp; AI</span>
-                        </div>
-                    </div>
-                    <ul class="class-card-list">
-                        <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
-                        <li><a href="downloads/class10.pdf">Year Plan</a></li>
-                        <li><a href="downloads/level3-lesson-plans.pdf">Lesson Plans <span class="badge">72</span></a></li>
-                        <li><a href="downloads/class10-assessments.pdf">Assessments <span class="badge">12</span></a></li>
-                        <li><a href="downloads/class10-answer-keys.pdf">Answer Keys <span class="badge">12</span></a></li>
-                        <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Approach Section -->
-    <section class="section" id="approach">
-        <div class="section-inner">
-            <div class="section-header">
-                <span class="section-eyebrow">Pedagogy</span>
+                <span class="section-eyebrow">Approach</span>
                 <h2 class="section-title">Grounded in research, shaped by reality</h2>
-                <p class="section-desc">These resources draw from proven teaching frameworks, adapted for the unique context of rural Karnataka schools.</p>
             </div>
-
             <div class="approach-grid">
                 <div class="approach-card">
                     <div class="approach-icon" style="background: var(--accent-soft); color: var(--accent);">&#x1f9e0;</div>
                     <h3>Singapore CPA</h3>
-                    <p>Concrete &rarr; Pictorial &rarr; Abstract progression. Students manipulate physical objects before moving to representations and symbols.</p>
+                    <p>Concrete &rarr; Pictorial &rarr; Abstract. Students manipulate objects before moving to symbols.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon" style="background: var(--sage-soft); color: var(--sage);">&#x1f3af;</div>
                     <h3>UK NCCE Unplugged</h3>
-                    <p>Unplugged computing, live coding, Parsons Problems, and pair programming &mdash; no computer required for foundational concepts.</p>
+                    <p>Unplugged computing, live coding, Parsons Problems, pair programming &mdash; no computer needed.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon" style="background: var(--violet-soft); color: var(--violet);">&#x1f465;</div>
                     <h3>Lesson Study</h3>
-                    <p>Collaborative lesson planning, observation, and reflection cycles. Teachers learn from each other's classroom practice.</p>
+                    <p>Collaborative planning, observation, and reflection. Teachers learn from each other.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon" style="background: var(--amber-soft); color: var(--amber);">&#x1f30d;</div>
                     <h3>Phenomenon-Based</h3>
-                    <p>Learning through real-world phenomena &mdash; grain sorting, bus routes, hostel inventories &mdash; connecting ICT to daily life.</p>
+                    <p>Real-world contexts &mdash; grain sorting, bus routes, hostel inventories &mdash; connect ICT to daily life.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon" style="background: var(--rose-soft); color: var(--rose);">&#x1f4aa;</div>
                     <h3>Mastery Learning</h3>
-                    <p>Students must demonstrate proficiency before advancing. Built-in retrieval practice and spiral curriculum ensure deep understanding.</p>
+                    <p>Proficiency before advancing. Retrieval practice and spiral curriculum ensure deep understanding.</p>
                 </div>
                 <div class="approach-card">
                     <div class="approach-icon" style="background: #e0f2fe; color: #0284c7;">&#x1f3d7;</div>
                     <h3>Dormitory Tasks</h3>
-                    <p>Paper-and-pencil activities designed for zero lab access. Students learn computational thinking without a single computer.</p>
+                    <p>Paper-and-pencil activities for zero lab access. Computational thinking without a computer.</p>
                 </div>
             </div>
         </div>
@@ -385,59 +333,36 @@
     <!-- Footer -->
     <footer class="footer no-print">
         <div class="footer-inner">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>KREIS ICT Resources</h3>
-                    <p>Teaching materials for Karnataka Residential Educational Institutions Society &mdash; 817 schools serving rural Karnataka.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="downloads/teaching-guides-level1.pdf">Teaching Guides</a></li>
-                        <li><a href="downloads/class6.pdf">Year Plans</a></li>
-                        <li><a href="downloads/level1-lesson-plans.pdf">Lesson Plans</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Assessment</h4>
-                    <ul>
-                        <li><a href="downloads/class6-assessments.pdf">All Assessments</a></li>
-                        <li><a href="downloads/class6-answer-keys.pdf">Answer Keys</a></li>
-                        <li><a href="downloads/lab-manual-level1.pdf">Lab Manuals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>More</h4>
-                    <ul>
-                        <li><a href="downloads/">All Downloads</a></li>
-                        <li><a href="https://kreis.karnataka.gov.in" target="_blank">KREIS Website</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <span>&copy; 2026 KREIS ICT Resources</span>
+                <span>KREIS ICT Resources &middot; 817 schools serving rural Karnataka</span>
                 <a href="https://kreis.karnataka.gov.in" target="_blank">kreis.karnataka.gov.in</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Navbar scroll effect
+        // Navbar scroll
         const nav = document.getElementById('mainNav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 10);
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                e.preventDefault();
+                const t = document.querySelector(this.getAttribute('href'));
+                if (t) { t.scrollIntoView({ behavior: 'smooth' }); document.querySelector('.nav-links').classList.remove('open'); }
+            });
         });
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    // Close mobile menu
-                    document.querySelector('.nav-links').classList.remove('open');
-                }
+        // Filter tabs
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const f = tab.dataset.filter;
+                document.querySelectorAll('.download-item').forEach(item => {
+                    item.style.display = (f === 'all' || item.dataset.cat === f) ? '' : 'none';
+                });
             });
         });
     </script>
