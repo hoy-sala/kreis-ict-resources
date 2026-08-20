@@ -1,0 +1,236 @@
+/* KREIS ICT Resources - Print Stylesheet */
+
+@media print {
+    /* Hide non-printable elements */
+    nav,
+    footer,
+    .no-print,
+    .action-buttons,
+    .breadcrumb,
+    .sidebar,
+    .nav-links,
+    .btn,
+    .download-section {
+        display: none !important;
+    }
+
+    /* Page setup */
+    @page {
+        size: A4;
+        margin: 2cm;
+    }
+
+    /* Reset body */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: white;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 18pt;
+        margin-bottom: 1rem;
+        page-break-after: avoid;
+    }
+
+    h2 {
+        font-size: 14pt;
+        margin: 1.5rem 0 0.5rem;
+        page-break-after: avoid;
+    }
+
+    h3 {
+        font-size: 12pt;
+        margin: 1rem 0 0.5rem;
+        page-break-after: avoid;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+        text-align: justify;
+    }
+
+    /* Links - show URL */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    nav a[href]:after,
+    .no-print a[href]:after {
+        content: none;
+    }
+
+    /* Tables */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        page-break-inside: avoid;
+        font-size: 10pt;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        padding: 6px 8px;
+        text-align: left;
+    }
+
+    th {
+        background: #f0f0f0 !important;
+        font-weight: bold;
+    }
+
+    /* Code blocks */
+    pre,
+    code {
+        font-family: 'Courier New', monospace;
+        font-size: 10pt;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 8px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        page-break-inside: avoid;
+    }
+
+    /* Lists */
+    ul, ol {
+        margin: 0.5rem 0 0.5rem 1.5rem;
+    }
+
+    li {
+        margin-bottom: 0.3rem;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Page breaks */
+    .page-break {
+        page-break-before: always;
+    }
+
+    .section-break {
+        page-break-before: always;
+    }
+
+    /* Headers - avoid orphans */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Tables - avoid breaks */
+    table, figure, pre {
+        page-break-inside: avoid;
+    }
+
+    /* Content container */
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-section {
+        box-shadow: none;
+        padding: 0;
+        border: none;
+    }
+
+    /* Hero section - simplified for print */
+    .hero {
+        background: none;
+        color: #000;
+        padding: 1rem 0;
+        border-bottom: 2px solid #000;
+    }
+
+    .hero h1 {
+        font-size: 20pt;
+    }
+
+    /* Card - border for print */
+    .card {
+        border: 1px solid #ccc;
+        box-shadow: none;
+    }
+
+    .card-header {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+    }
+
+    /* Assessment papers */
+    .assessment-header {
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .marks-box {
+        border: 1px solid #000;
+        padding: 8px;
+        margin: 1rem 0;
+    }
+
+    /* Question formatting */
+    .question {
+        margin-bottom: 1rem;
+        page-break-inside: avoid;
+    }
+
+    .question-number {
+        font-weight: bold;
+    }
+
+    .marks {
+        font-style: italic;
+        color: #666;
+    }
+
+    /* Answer key */
+    .answer {
+        margin-left: 1.5rem;
+    }
+
+    .answer-key {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    /* Footer - page numbers */
+    body:after {
+        content: counter(page);
+        position: fixed;
+        bottom: 1cm;
+        right: 1cm;
+        font-size: 10pt;
+    }
+}
+
+/* Print-specific utilities */
+.print-only {
+    display: none;
+}
+
+@media print {
+    .print-only {
+        display: block;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+}
