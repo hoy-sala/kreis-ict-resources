@@ -3,329 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KREIS ICT Teaching Resources</title>
+    <title>ICT Teaching Resources | KREIS</title>
+    <meta name="description" content="Complete ICT teaching resources for Classes 6-10. Lesson plans, assessments, lab manuals, and answer keys for Karnataka Residential Educational Institutions Society.">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/print.css" media="print">
-    <style>
-        .level-card {
-            border-left: 4px solid var(--accent-color);
-        }
-        .level-card.class6 { border-left-color: #27ae60; }
-        .level-card.class7 { border-left-color: #2980b9; }
-        .level-card.class8 { border-left-color: #8e44ad; }
-        .level-card.class9 { border-left-color: #e74c3c; }
-        .level-card.class10 { border-left-color: #f39c12; }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        .stat-box {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        .stat-box .number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-        .stat-box .label {
-            color: #666;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 </head>
 <body>
-    <nav class="no-print">
-        <div class="nav-container">
-            <a href="index.html" class="logo">KREIS ICT Resources</a>
+    <!-- Navigation -->
+    <nav class="nav no-print" id="mainNav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <div class="nav-brand-icon">K</div>
+                <span class="nav-brand-text">KREIS ICT Resources</span>
+            </a>
+            <button class="nav-mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
             <ul class="nav-links">
-                <li><a href="teaching-guides/index.html">Teaching Guides</a></li>
-                <li><a href="year-plans/index.html">Year Plans</a></li>
-                <li><a href="lesson-plans/index.html">Lesson Plans</a></li>
-                <li><a href="assessments/index.html">Assessments</a></li>
-                <li><a href="lab-manual/index.html">Lab Manual</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#classes">By Class</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#approach">Approach</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="hero">
-            <h1>Karnataka Residential Educational Institutions Society</h1>
-            <p>ICT Teaching Resources - Classes 6 to 10</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                Complete teaching materials with 5E lesson plans, assessments, and lab manuals
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0Z"/><path d="M6.5 3.5a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 .5-.5Z"/></svg>
+                KARNATAKA RESIDENTIAL SCHOOLS
+            </div>
+            <h1>Teaching ICT with <span>purpose &amp; passion</span></h1>
+            <p class="hero-subtitle">
+                A complete teaching toolkit for Classes 6 through 10 &mdash; crafted for 817 KREIS residential schools across rural Karnataka, where every lesson counts and every child deserves quality resources.
             </p>
-        </div>
-
-        <div class="action-buttons no-print" style="justify-content: center;">
-            <button onclick="window.print()" class="btn btn-primary">
-                Print This Page
-            </button>
-            <a href="downloads/" class="btn btn-secondary">
-                Download All Resources
-            </a>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stat-box">
-                <div class="number">5</div>
-                <div class="label">Grade Levels</div>
-            </div>
-            <div class="stat-box">
-                <div class="number">216</div>
-                <div class="label">Lesson Plans</div>
-            </div>
-            <div class="stat-box">
-                <div class="number">60</div>
-                <div class="label">Assessments</div>
-            </div>
-            <div class="stat-box">
-                <div class="number">60</div>
-                <div class="label">Answer Keys</div>
-            </div>
-            <div class="stat-box">
-                <div class="number">349</div>
-                <div class="label">Total PDFs</div>
+            <div class="hero-actions">
+                <a href="downloads/" class="btn btn-primary">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download All Resources
+                </a>
+                <a href="#resources" class="btn btn-secondary">
+                    Explore Materials
+                </a>
             </div>
         </div>
+    </section>
 
-        <div class="content-section">
-            <h2>Quick Access by Class</h2>
-            
-            <div class="card-grid">
-                <div class="card level-card class6">
-                    <div class="card-header">
-                        <h3>Class 6 - ICT Level 1</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><a href="downloads/teaching-guides-level1.pdf">Teaching Guide</a></li>
-                            <li><a href="downloads/class6.pdf">Year Plan</a></li>
-                            <li><a href="downloads/level1-ch1-01.pdf">Lesson Plans (72)</a></li>
-                            <li><a href="downloads/class6-fa1.pdf">Assessments (12)</a></li>
-                            <li><a href="downloads/class6-fa1-answer-key.pdf">Answer Keys (12)</a></li>
-                            <li><a href="downloads/lab-manual-level1.pdf">Lab Manual</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card level-card class7">
-                    <div class="card-header">
-                        <h3>Class 7 - ICT Level 2</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><a href="downloads/teaching-guides-level2.pdf">Teaching Guide</a></li>
-                            <li><a href="downloads/class7.pdf">Year Plan</a></li>
-                            <li><a href="downloads/level2-ch1-01.pdf">Lesson Plans (72)</a></li>
-                            <li><a href="downloads/class7-fa1.pdf">Assessments (12)</a></li>
-                            <li><a href="downloads/class7-fa1-answer-key.pdf">Answer Keys (12)</a></li>
-                            <li><a href="downloads/lab-manual-level2.pdf">Lab Manual</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card level-card class8">
-                    <div class="card-header">
-                        <h3>Class 8 - ICT Level 3</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
-                            <li><a href="downloads/class8.pdf">Year Plan</a></li>
-                            <li><a href="downloads/level3-ch1-01.pdf">Lesson Plans (72)</a></li>
-                            <li><a href="downloads/class8-fa1.pdf">Assessments (12)</a></li>
-                            <li><a href="downloads/class8-fa1-answer-key.pdf">Answer Keys (12)</a></li>
-                            <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card level-card class9">
-                    <div class="card-header">
-                        <h3>Class 9 - ICT Level 3</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
-                            <li><a href="downloads/class9.pdf">Year Plan</a></li>
-                            <li><a href="downloads/level3-ch1-01.pdf">Lesson Plans (72)</a></li>
-                            <li><a href="downloads/class9-fa1.pdf">Assessments (12)</a></li>
-                            <li><a href="downloads/class9-fa1-answer-key.pdf">Answer Keys (12)</a></li>
-                            <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card level-card class10">
-                    <div class="card-header">
-                        <h3>Class 10 - ICT Level 3</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
-                            <li><a href="downloads/class10.pdf">Year Plan</a></li>
-                            <li><a href="downloads/level3-ch1-01.pdf">Lesson Plans (72)</a></li>
-                            <li><a href="downloads/class10-fa1.pdf">Assessments (12)</a></li>
-                            <li><a href="downloads/class10-fa1-answer-key.pdf">Answer Keys (12)</a></li>
-                            <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- Stats -->
+    <div class="stats-strip no-print">
+        <div class="stat">
+            <div class="stat-number">349</div>
+            <div class="stat-label">PDF Resources</div>
         </div>
-
-        <div class="content-section">
-            <h2>Resources by Type</h2>
-            
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Resource Type</th>
-                            <th>Description</th>
-                            <th>Format</th>
-                            <th class="no-print">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Teaching Guides</strong></td>
-                            <td>Comprehensive pedagogical guides for each level</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="teaching-guides/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Year Plans</strong></td>
-                            <td>Annual curriculum mapping for each class</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="year-plans/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>5E Lesson Plans</strong></td>
-                            <td>Detailed lesson plans with Engage, Explore, Explain, Elaborate, Evaluate</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="lesson-plans/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Formative Assessments</strong></td>
-                            <td>FA-1 to FA-4 with answer keys (30 marks each)</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="assessments/formative/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Unit Tests</strong></td>
-                            <td>4 unit tests per class (10 marks each)</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="assessments/unit-tests/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Summative Assessments</strong></td>
-                            <td>SA-1 and SA-2 with marking schemes (40 marks each)</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="assessments/summative/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Practical Lab Exams</strong></td>
-                            <td>Mid-term and Annual practical exams (20 marks each)</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="assessments/practical/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Lab Manual</strong></td>
-                            <td>Student workbook with hands-on exercises</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="lab-manual/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Capstone Projects</strong></td>
-                            <td>Interdisciplinary projects for each grade</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="capstone-projects/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Computer Club Activities</strong></td>
-                            <td>Monthly activity modules</td>
-                            <td>PDF (A4)</td>
-                            <td class="no-print">
-                                <a href="computer-club/" class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.85rem;">View</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="stat">
+            <div class="stat-number">216</div>
+            <div class="stat-label">Lesson Plans</div>
         </div>
-
-        <div class="content-section">
-            <h2>Quick Links</h2>
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Download Sections</h3>
-                        <ul>
-                            <li><a href="downloads/level1/">Level 1 (Class 6)</a></li>
-                            <li><a href="downloads/level2/">Level 2 (Class 7)</a></li>
-                            <li><a href="downloads/level3/">Level 3 (Class 8-10)</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Answer Keys</h3>
-                        <ul>
-                            <li><a href="answer-keys/formative.html">Formative Assessment Keys</a></li>
-                            <li><a href="answer-keys/unit-tests.html">Unit Test Keys</a></li>
-                            <li><a href="answer-keys/summative.html">Summative Assessment Keys</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Print Settings</h3>
-                        <p style="font-size: 0.9rem; color: #666;">
-                            All documents are formatted for A4 printing with 2cm margins.
-                        </p>
-                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
-                            Use <strong>Ctrl + P</strong> to print any page.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="stat">
+            <div class="stat-number">60</div>
+            <div class="stat-label">Assessments</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">60</div>
+            <div class="stat-label">Answer Keys</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Grade Levels</div>
         </div>
     </div>
 
-    <footer class="no-print">
-        <p>Karnataka Residential Educational Institutions Society (KREIS)</p>
-        <p>ICT Teaching Resources Portal</p>
-        <p style="margin-top: 1rem;">
-            <a href="https://kreis.karnataka.gov.in" target="_blank">KREIS Official Website</a>
-        </p>
+    <!-- About Section -->
+    <section class="section section-alt" id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-eyebrow">About This Project</span>
+                    <h2>Built for teachers who build Karnataka</h2>
+                    <p>
+                        These resources were designed for the unique realities of KREIS schools &mdash; 817 residential institutions serving rural Karnataka, where 40-minute periods, mixed-ability classrooms, and limited lab access are the norm, not the exception.
+                    </p>
+                    <p>
+                        Every lesson plan fits a single 40-minute period. Every activity works with zero lab access. Every assessment follows the KREIS framework of 4 FAs, 4 Unit Tests, 2 SAs, and 2 Lab Exams &mdash; totalling 280 marks per student per year.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">&#x1f3d7;</div>
+                            <h4>817 Schools</h4>
+                            <p>Across Karnataka's rural districts</p>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">&#x1f40d;</div>
+                            <h4>40-Minute Periods</h4>
+                            <p>Every lesson designed to fit</p>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">&#x1f331;</div>
+                            <h4>Rural First</h4>
+                            <p>Zero-lab activities included</p>
+                        </div>
+                        <div class="about-highlight">
+                            <div class="about-highlight-icon">&#x1f4ca;</div>
+                            <h4>280 Marks</h4>
+                            <p>Complete annual assessment suite</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-frame">
+                        &#x1f393;
+                    </div>
+                    <div class="about-image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section" id="resources">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-eyebrow">Teaching Materials</span>
+                <h2 class="section-title">Everything you need, nothing you don't</h2>
+                <p class="section-desc">From year plans to lab manuals, every resource is print-ready A4 and built for the KREIS curriculum.</p>
+            </div>
+
+            <div class="resource-grid">
+                <!-- Teaching Guides -->
+                <div class="resource-card" style="--card-accent: #2563eb; --card-accent-soft: #dbeafe;">
+                    <div class="resource-card-accent"></div>
+                    <div class="resource-card-body">
+                        <div class="resource-card-icon">&#x1f4d6;</div>
+                        <h3>Teaching Guides</h3>
+                        <p>Comprehensive pedagogical guides for each level, covering Singapore CPA, UK NCCE Unplugged, Lesson Study, and Phenomenon-Based Learning approaches.</p>
+                        <div class="resource-card-links">
+                            <a href="downloads/teaching-guides-level1.pdf" class="resource-card-link">Level 1 (Class 6)</a>
+                            <a href="downloads/teaching-guides-level2.pdf" class="resource-card-link">Level 2 (Class 7)</a>
+                            <a href="downloads/teaching-guides-level3.pdf" class="resource-card-link">Level 3 (Class 8-10)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year Plans -->
+                <div class="resource-card" style="--card-accent: #059669; --card-accent-soft: #d1fae5;">
+                    <div class="resource-card-accent"></div>
+                    <div class="resource-card-body">
+                        <div class="resource-card-icon">&#x1f4c5;</div>
+                        <h3>Year Plans</h3>
+                        <p>Annual curriculum mapping with 100% syllabus coverage by January, followed by revision, practical re-runs, and exam preparation in February-March.</p>
+                        <div class="resource-card-links">
+                            <a href="downloads/class6.pdf" class="resource-card-link">Class 6</a>
+                            <a href="downloads/class7.pdf" class="resource-card-link">Class 7</a>
+                            <a href="downloads/class8.pdf" class="resource-card-link">Class 8</a>
+                            <a href="downloads/class9.pdf" class="resource-card-link">Class 9</a>
+                            <a href="downloads/class10.pdf" class="resource-card-link">Class 10</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson Plans -->
+                <div class="resource-card" style="--card-accent: #7c3aed; --card-accent-soft: #ede9fe;">
+                    <div class="resource-card-accent"></div>
+                    <div class="resource-card-body">
+                        <div class="resource-card-icon">&#x1f4cb;</div>
+                        <h3>5E Lesson Plans</h3>
+                        <p>216 detailed lesson plans following the Engage, Explore, Explain, Elaborate, Evaluate framework. Each fits a single 40-minute period perfectly.</p>
+                        <div class="resource-card-links">
+                            <a href="downloads/level1-ch1-01.pdf" class="resource-card-link">Level 1 (72 plans)</a>
+                            <a href="downloads/level2-ch1-01.pdf" class="resource-card-link">Level 2 (72 plans)</a>
+                            <a href="downloads/level3-ch1-01.pdf" class="resource-card-link">Level 3 (72 plans)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessments -->
+                <div class="resource-card" style="--card-accent: #e11d48; --card-accent-soft: #ffe4e6;">
+                    <div class="resource-card-accent"></div>
+                    <div class="resource-card-body">
+                        <div class="resource-card-icon">&#x1f4dd;</div>
+                        <h3>Assessments</h3>
+                        <p>60 complete assessments: 4 Formative (30 marks), 4 Unit Tests (10 marks), 2 Summative (40 marks), and 2 Practical Lab Exams (20 marks) per class.</p>
+                        <div class="resource-card-links">
+                            <a href="downloads/class6-fa1.pdf" class="resource-card-link">Class 6 (12)</a>
+                            <a href="downloads/class7-fa1.pdf" class="resource-card-link">Class 7 (12)</a>
+                            <a href="downloads/class8-fa1.pdf" class="resource-card-link">Class 8 (12)</a>
+                            <a href="downloads/class9-fa1.pdf" class="resource-card-link">Class 9 (12)</a>
+                            <a href="downloads/class10-fa1.pdf" class="resource-card-link">Class 10 (12)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Answer Keys -->
+                <div class="resource-card" style="--card-accent: #d97706; --card-accent-soft: #fef3c7;">
+                    <div class="resource-card-accent"></div>
+                    <div class="resource-card-body">
+                        <div class="resource-card-icon">&#x2705;</div>
+                        <h3>Answer Keys</h3>
+                        <p>Complete marking guidelines for every assessment, with model answers, marking rubrics, and partial credit guidelines for teachers.</p>
+                        <div class="resource-card-links">
+                            <a href="downloads/class6-fa1-answer-key.pdf" class="resource-card-link">Class 6 Keys</a>
+                            <a href="downloads/class7-fa1-answer-key.pdf" class="resource-card-link">Class 7 Keys</a>
+                            <a href="downloads/class8-fa1-answer-key.pdf" class="resource-card-link">Class 8 Keys</a>
+                            <a href="downloads/class9-fa1-answer-key.pdf" class="resource-card-link">Class 9 Keys</a>
+                            <a href="downloads/class10-fa1-answer-key.pdf" class="resource-card-link">Class 10 Keys</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab Manuals -->
+                <div class="resource-card" style="--card-accent: #0891b2; --card-accent-soft: #cffafe;">
+                    <div class="resource-card-accent"></div>
+                    <div class="resource-card-body">
+                        <div class="resource-card-icon">&#x1f52c;</div>
+                        <h3>Lab Manuals</h3>
+                        <p>Student workbooks with hands-on exercises designed for schools with limited or no computer lab access. Paper-and-pencil dormitory tasks included.</p>
+                        <div class="resource-card-links">
+                            <a href="downloads/lab-manual-level1.pdf" class="resource-card-link">Level 1</a>
+                            <a href="downloads/lab-manual-level2.pdf" class="resource-card-link">Level 2</a>
+                            <a href="downloads/lab-manual-level3.pdf" class="resource-card-link">Level 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="section section-alt" id="classes">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-eyebrow">By Class</span>
+                <h2 class="section-title">Quick access for every grade</h2>
+                <p class="section-desc">Jump straight to the resources you need for your class.</p>
+            </div>
+
+            <div class="class-grid">
+                <!-- Class 6 -->
+                <div class="class-card">
+                    <div class="class-card-header">
+                        <div class="class-card-number c6">6</div>
+                        <div class="class-card-title">
+                            <h3>Class 6 &mdash; ICT Level 1</h3>
+                            <span>Introduction to Computers &amp; Internet</span>
+                        </div>
+                    </div>
+                    <ul class="class-card-list">
+                        <li><a href="downloads/teaching-guides-level1.pdf">Teaching Guide</a></li>
+                        <li><a href="downloads/class6.pdf">Year Plan</a></li>
+                        <li><a href="downloads/level1-ch1-01.pdf">Lesson Plans <span class="badge">72</span></a></li>
+                        <li><a href="downloads/class6-fa1.pdf">Assessments <span class="badge">12</span></a></li>
+                        <li><a href="downloads/class6-fa1-answer-key.pdf">Answer Keys <span class="badge">12</span></a></li>
+                        <li><a href="downloads/lab-manual-level1.pdf">Lab Manual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Class 7 -->
+                <div class="class-card">
+                    <div class="class-card-header">
+                        <div class="class-card-number c7">7</div>
+                        <div class="class-card-title">
+                            <h3>Class 7 &mdash; ICT Level 2</h3>
+                            <span>Spreadsheets, Multimedia &amp; Scratch</span>
+                        </div>
+                    </div>
+                    <ul class="class-card-list">
+                        <li><a href="downloads/teaching-guides-level2.pdf">Teaching Guide</a></li>
+                        <li><a href="downloads/class7.pdf">Year Plan</a></li>
+                        <li><a href="downloads/level2-ch1-01.pdf">Lesson Plans <span class="badge">72</span></a></li>
+                        <li><a href="downloads/class7-fa1.pdf">Assessments <span class="badge">12</span></a></li>
+                        <li><a href="downloads/class7-fa1-answer-key.pdf">Answer Keys <span class="badge">12</span></a></li>
+                        <li><a href="downloads/lab-manual-level2.pdf">Lab Manual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Class 8 -->
+                <div class="class-card">
+                    <div class="class-card-header">
+                        <div class="class-card-number c8">8</div>
+                        <div class="class-card-title">
+                            <h3>Class 8 &mdash; ICT Level 3</h3>
+                            <span>Databases, SQL &amp; Web Technologies</span>
+                        </div>
+                    </div>
+                    <ul class="class-card-list">
+                        <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
+                        <li><a href="downloads/class8.pdf">Year Plan</a></li>
+                        <li><a href="downloads/level3-ch1-01.pdf">Lesson Plans <span class="badge">72</span></a></li>
+                        <li><a href="downloads/class8-fa1.pdf">Assessments <span class="badge">12</span></a></li>
+                        <li><a href="downloads/class8-fa1-answer-key.pdf">Answer Keys <span class="badge">12</span></a></li>
+                        <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Class 9 -->
+                <div class="class-card">
+                    <div class="class-card-header">
+                        <div class="class-card-number c9">9</div>
+                        <div class="class-card-title">
+                            <h3>Class 9 &mdash; ICT Level 3</h3>
+                            <span>Python Programming &amp; Data Analytics</span>
+                        </div>
+                    </div>
+                    <ul class="class-card-list">
+                        <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
+                        <li><a href="downloads/class9.pdf">Year Plan</a></li>
+                        <li><a href="downloads/level3-ch1-01.pdf">Lesson Plans <span class="badge">72</span></a></li>
+                        <li><a href="downloads/class9-fa1.pdf">Assessments <span class="badge">12</span></a></li>
+                        <li><a href="downloads/class9-fa1-answer-key.pdf">Answer Keys <span class="badge">12</span></a></li>
+                        <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Class 10 -->
+                <div class="class-card">
+                    <div class="class-card-header">
+                        <div class="class-card-number c10">10</div>
+                        <div class="class-card-title">
+                            <h3>Class 10 &mdash; ICT Level 3</h3>
+                            <span>Advanced Python, Networking &amp; AI</span>
+                        </div>
+                    </div>
+                    <ul class="class-card-list">
+                        <li><a href="downloads/teaching-guides-level3.pdf">Teaching Guide</a></li>
+                        <li><a href="downloads/class10.pdf">Year Plan</a></li>
+                        <li><a href="downloads/level3-ch1-01.pdf">Lesson Plans <span class="badge">72</span></a></li>
+                        <li><a href="downloads/class10-fa1.pdf">Assessments <span class="badge">12</span></a></li>
+                        <li><a href="downloads/class10-fa1-answer-key.pdf">Answer Keys <span class="badge">12</span></a></li>
+                        <li><a href="downloads/lab-manual-level3.pdf">Lab Manual</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="section" id="approach">
+        <div class="section-inner">
+            <div class="section-header">
+                <span class="section-eyebrow">Pedagogy</span>
+                <h2 class="section-title">Grounded in research, shaped by reality</h2>
+                <p class="section-desc">These resources draw from proven teaching frameworks, adapted for the unique context of rural Karnataka schools.</p>
+            </div>
+
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <div class="approach-icon" style="background: var(--accent-soft); color: var(--accent);">&#x1f9e0;</div>
+                    <h3>Singapore CPA</h3>
+                    <p>Concrete &rarr; Pictorial &rarr; Abstract progression. Students manipulate physical objects before moving to representations and symbols.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon" style="background: var(--sage-soft); color: var(--sage);">&#x1f3af;</div>
+                    <h3>UK NCCE Unplugged</h3>
+                    <p>Unplugged computing, live coding, Parsons Problems, and pair programming &mdash; no computer required for foundational concepts.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon" style="background: var(--violet-soft); color: var(--violet);">&#x1f465;</div>
+                    <h3>Lesson Study</h3>
+                    <p>Collaborative lesson planning, observation, and reflection cycles. Teachers learn from each other's classroom practice.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon" style="background: var(--amber-soft); color: var(--amber);">&#x1f30d;</div>
+                    <h3>Phenomenon-Based</h3>
+                    <p>Learning through real-world phenomena &mdash; grain sorting, bus routes, hostel inventories &mdash; connecting ICT to daily life.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon" style="background: var(--rose-soft); color: var(--rose);">&#x1f4aa;</div>
+                    <h3>Mastery Learning</h3>
+                    <p>Students must demonstrate proficiency before advancing. Built-in retrieval practice and spiral curriculum ensure deep understanding.</p>
+                </div>
+                <div class="approach-card">
+                    <div class="approach-icon" style="background: #e0f2fe; color: #0284c7;">&#x1f3d7;</div>
+                    <h3>Dormitory Tasks</h3>
+                    <p>Paper-and-pencil activities designed for zero lab access. Students learn computational thinking without a single computer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer no-print">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>KREIS ICT Resources</h3>
+                    <p>Teaching materials for Karnataka Residential Educational Institutions Society &mdash; 817 schools serving rural Karnataka.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="downloads/teaching-guides-level1.pdf">Teaching Guides</a></li>
+                        <li><a href="downloads/class6.pdf">Year Plans</a></li>
+                        <li><a href="downloads/level1-ch1-01.pdf">Lesson Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Assessment</h4>
+                    <ul>
+                        <li><a href="downloads/class6-fa1.pdf">Formative (FA)</a></li>
+                        <li><a href="downloads/class6-ut1.pdf">Unit Tests (UT)</a></li>
+                        <li><a href="downloads/class6-sa1.pdf">Summative (SA)</a></li>
+                        <li><a href="downloads/class6-lab1.pdf">Lab Exams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="downloads/class6-fa1-answer-key.pdf">Answer Keys</a></li>
+                        <li><a href="downloads/lab-manual-level1.pdf">Lab Manuals</a></li>
+                        <li><a href="https://kreis.karnataka.gov.in" target="_blank">KREIS Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 KREIS ICT Resources</span>
+                <a href="https://kreis.karnataka.gov.in" target="_blank">kreis.karnataka.gov.in</a>
+            </div>
+        </div>
     </footer>
 
-    <script src="assets/js/print.js"></script>
+    <script>
+        // Navbar scroll effect
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu
+                    document.querySelector('.nav-links').classList.remove('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

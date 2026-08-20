@@ -2,15 +2,8 @@
 
 @media print {
     /* Hide non-printable elements */
-    nav,
-    footer,
-    .no-print,
-    .action-buttons,
-    .breadcrumb,
-    .sidebar,
-    .nav-links,
-    .btn,
-    .download-section {
+    nav, footer, .no-print, .btn, .hero-actions,
+    .nav-links, .nav-mobile-toggle, .stats-strip {
         display: none !important;
     }
 
@@ -27,23 +20,27 @@
         line-height: 1.5;
         color: #000;
         background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     /* Typography */
     h1 {
-        font-size: 18pt;
-        margin-bottom: 1rem;
+        font-size: 20pt;
+        margin-bottom: 0.5rem;
         page-break-after: avoid;
     }
 
     h2 {
-        font-size: 14pt;
+        font-size: 16pt;
         margin: 1.5rem 0 0.5rem;
         page-break-after: avoid;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.3rem;
     }
 
     h3 {
-        font-size: 12pt;
+        font-size: 13pt;
         margin: 1rem 0 0.5rem;
         page-break-after: avoid;
     }
@@ -53,16 +50,51 @@
         text-align: justify;
     }
 
+    /* Hero - simplified */
+    .hero {
+        background: none !important;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 18pt;
+    }
+
+    .hero-badge, .hero-subtitle {
+        color: #333;
+    }
+
     /* Links - show URL */
     a[href]:after {
         content: " (" attr(href) ")";
-        font-size: 0.8em;
+        font-size: 0.75em;
         color: #666;
+        word-break: break-all;
     }
 
     nav a[href]:after,
-    .no-print a[href]:after {
+    .no-print a[href]:after,
+    .hero-actions a[href]:after,
+    .resource-card-link[href]:after,
+    .class-card-list a[href]:after,
+    .footer-col a[href]:after {
         content: none;
+    }
+
+    /* Cards - border for print */
+    .resource-card, .class-card, .approach-card {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .resource-card-accent {
+        background: #333 !important;
+    }
+
+    .resource-card-icon, .approach-icon, .class-card-number {
+        border: 1px solid #ccc;
     }
 
     /* Tables */
@@ -74,8 +106,7 @@
         font-size: 10pt;
     }
 
-    th,
-    td {
+    th, td {
         border: 1px solid #000;
         padding: 6px 8px;
         text-align: left;
@@ -87,8 +118,7 @@
     }
 
     /* Code blocks */
-    pre,
-    code {
+    pre, code {
         font-family: 'Courier New', monospace;
         font-size: 10pt;
         background: #f5f5f5;
@@ -115,99 +145,42 @@
     }
 
     /* Page breaks */
-    .page-break {
+    .page-break, .section-break {
         page-break-before: always;
     }
 
-    .section-break {
-        page-break-before: always;
-    }
-
-    /* Headers - avoid orphans */
     h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid;
         page-break-inside: avoid;
     }
 
-    /* Tables - avoid breaks */
     table, figure, pre {
         page-break-inside: avoid;
     }
 
-    /* Content container */
-    .container {
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .content-section {
-        box-shadow: none;
-        padding: 0;
-        border: none;
-    }
-
-    /* Hero section - simplified for print */
-    .hero {
-        background: none;
-        color: #000;
+    /* Sections */
+    .section {
         padding: 1rem 0;
-        border-bottom: 2px solid #000;
     }
 
-    .hero h1 {
-        font-size: 20pt;
+    .section-header {
+        text-align: left;
     }
 
-    /* Card - border for print */
-    .card {
-        border: 1px solid #ccc;
-        box-shadow: none;
+    .about-grid {
+        display: block;
     }
 
-    .card-header {
-        background: #f0f0f0 !important;
-        color: #000 !important;
+    .about-image {
+        display: none;
     }
 
-    /* Assessment papers */
-    .assessment-header {
-        border-bottom: 2px solid #000;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
+    .approach-grid {
+        display: block;
     }
 
-    .marks-box {
-        border: 1px solid #000;
-        padding: 8px;
-        margin: 1rem 0;
-    }
-
-    /* Question formatting */
-    .question {
-        margin-bottom: 1rem;
-        page-break-inside: avoid;
-    }
-
-    .question-number {
-        font-weight: bold;
-    }
-
-    .marks {
-        font-style: italic;
-        color: #666;
-    }
-
-    /* Answer key */
-    .answer {
-        margin-left: 1.5rem;
-    }
-
-    .answer-key {
-        background: #f9f9f9;
-        border: 1px solid #ddd;
-        padding: 1rem;
-        margin: 1rem 0;
+    .resource-grid, .class-grid {
+        display: block;
     }
 
     /* Footer - page numbers */
